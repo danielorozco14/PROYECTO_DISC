@@ -13,7 +13,7 @@ var Message = mongoose.model('Message',{
   name : String,
   message : String
 })
-
+//LINK DE LA BASE DE DATOS DEL CHAT, FALTA CONFIGURAR ESTA MIERDA PARA VARIOS USUARIOS
 var dbUrl = 'mongodb://amkurian:amkurian1@ds257981.mlab.com:57981/simple-chat'
 
 app.get('/messages', (req, res) => {
