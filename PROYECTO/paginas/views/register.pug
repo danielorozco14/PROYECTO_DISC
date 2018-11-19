@@ -1,0 +1,66 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    link(rel='shortcut icon', href='images/icon.ico')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js')
+    script(src='https://use.fontawesome.com/releases/v5.0.8/js/all.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js')
+    link(href='/stylesheets/register.css', rel='stylesheet')
+    title TKCD.GAMES | Registrate
+  body
+    // NAVEGACION
+    nav.navbar.navbar-expand-md.navbar-dark.bg-dark.sticky-top
+      .container-fluid
+        a.navbar-brand(href='/')
+          i.fab.fa-ethereum
+          span.eslogan TKCD.GAMES
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive')
+          span.navbar-toggler-icon
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link(href='/') Home
+            li.nav-item
+              a.nav-link(href='/login') Sign In
+            li.nav-item
+              a.nav-link(href='#') Team
+            li.nav-item
+              a.nav-link(href='#') Connect
+    // FORMULARIO DE REGISTRO
+    .container-fluid.h-100
+      .row
+        .col-md-4.col-sm-4.col-xs-12.mx-auto
+        form.form-container.mx-auto(method='GET')
+          .form-row.col-md-7.mx-auto
+            .form-group.col-md-6
+              label(for='nombre') Nombre
+              input#nombre.form-control(type='text', placeholder='Nombre')
+            .form-group.col-md-6
+              label(for='apellido') Apellido
+              input#apellido.form-control(type='text', placeholder='Apellido')
+            .form-group.col-md-6
+              label(for='correo') Email
+              input#correo.form-control(type='email', placeholder='Email')
+            .form-group.col-md-6
+              label(for='pass') Password
+              input#pass.form-control(type='password', placeholder='Password')
+            fieldset#radioB.form-group
+              .row
+                legend.col-form-label.col-sm-2.pt-0 Sexo: 
+                .col-sm-10
+                  .form-check
+                    input#radioH.form-ckeck-input(type='radio', name='opcionSexo')
+                    label.form-check-label(for='radioH') Hombre
+                  .form-check
+                    input#radioM.form-ckeck-input(type='radio', name='opcionSexo', value='opcion2')
+                    label.form-check-label(for='radioM') Mujer
+          .col-md-4.mx-auto
+            button.btn.btn-success.btn-block(type='submit', style='font-weight:500') Registrarse

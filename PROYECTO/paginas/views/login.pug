@@ -1,0 +1,54 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    link(rel='shortcut icon', href='images/icon.ico')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js')
+    script(src='https://use.fontawesome.com/releases/v5.0.8/js/all.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js')
+    link(href='/stylesheets/login.css', rel='stylesheet')
+    title TKCD.GAMES | Login
+  body
+    // NAVEGACION
+    nav.navbar.navbar-expand-md.navbar-dark.bg-dark.sticky-top
+      .container-fluid
+        a.navbar-brand(href='/')
+          i.fab.fa-ethereum
+          span.eslogan TKCD.GAMES
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive')
+          span.navbar-toggler-icon
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link(href='/') Home
+            li.nav-item
+              a.nav-link(href='#') About
+            li.nav-item
+              a.nav-link(href='#') Team
+            li.nav-item
+              a.nav-link(href='#') Connect
+    // CUADRO DE LOGIN
+    .container-fluid.h-100
+      .row
+        .col-md-4.col-sm-4.col-xs-12.mx-auto
+          form.form-container(method='GET')
+            h1.text-left Iniciar Sesión
+            .form-group
+              label(for='exampleInputEmail1') Email
+              input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp', placeholder='Enter email')
+            .form-group
+              label(for='exampleInputPassword1') Password
+              input#exampleInputPassword1.form-control(type='password', placeholder='Password')
+            .form-group.form-check
+              input#exampleCheck1.form-check-input(type='checkbox')
+              label.form-check-label(for='exampleCheck1') Recuerdame
+            button.btn.btn-success.btn-block(type='submit', style='font-weight:500') Iniciar Sesión
+            label.form-check-label.register
+              | ¿No tienes una cuenta?
+              a.text-right(href='/register') Registrate

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,500,700");
+
+html {
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    color: #222;
+}
+/*
+body{
+    background-image: url("img/star.jpg");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    min-height: 100%;    
+}*/
+
+  body::before {
+    background: url("../images/blood.jpg") no-repeat center center fixed;
+    content: '';
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    position:fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
+.eslogan {
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    font-size: 1.7em;
+    font-weight: 600;
+    color: #ffffff;
+    margin-left: 0.2rem;
+}
+
+.navbar {
+    padding: 0.8rem;
+}
+
+.fa-ethereum {
+    font-size: 2em;
+    color: rgba(245, 109, 57, 1);
+}
+
+.navbar-nav li {
+    padding-right: 20px;
+}
+
+.nav-link {
+    font-size: 1.1em !important;
+    color: #ffffff;
+}
+.register{
+    margin-left:1.7rem; 
+    padding-top: 1rem;
+}
+.form-container{
+    
+    border: 0px solid #ffffff;
+    color: #ffffff;
+    padding: 50px 60px;
+    margin-top: 8vh;
+    -webkit-box-shadow: 0px 3px 12px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 12px 4px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 12px 4px rgba(0,0,0,0.75);
+
+}
+
+@media (max-width: 992px) {
+    .social a {
+        font-size: 4em;
+        padding: 2rem;
+    }
+    .form-container {
+        border: 0px solid #ffffff;
+        color: #ffffff;
+        padding: 50px 25px;
+        margin-top: 20vh;
+    }
+}
+
+@media (max-width: 768px) {
+      
+    .form-container {
+        border: 0px solid #ffffff;
+        color: #ffffff;
+        padding: 50px 25px;
+        margin-top: 10vh;
+    }
+    
+    
+}
+
+@media (max-width: 576px) {
+  
+    .eslogan {
+        top: -7px;
+        font-size: 1em;
+    }
+    .form-container {
+        border: 0px solid #ffffff;
+        color: #ffffff;
+        padding: 50px 25px;
+        margin-top: 10vh;
+    }
+    .register {
+        margin-left: 0.8rem;
+        padding-top: 1rem;
+    }
+     
+}

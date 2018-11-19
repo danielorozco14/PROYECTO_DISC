@@ -1,0 +1,236 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    link(rel='shortcut icon', href='images/icon.ico')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js')
+    script(src='https://use.fontawesome.com/releases/v5.0.8/js/all.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js')
+    link(href='/stylesheets/style.css', rel='stylesheet')
+    title TKCD.GAMES | The Social Network For Gamers
+  body
+    // BARRA DE NAVEGACION
+    nav.navbar.navbar-expand-md.navbar-dark.bg-light.sticky-top
+      .container-fluid
+        a.navbar-brand(href='/')
+          i.fab.fa-ethereum
+          span.eslogan TKCD.GAMES
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive')
+          span.navbar-toggler-icon
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link(href='/') Home
+            li.nav-item
+              a.nav-link(href='/login') Sign In
+            li.nav-item
+              a.nav-link(href='/register') Register
+            li.nav-item
+              a.nav-link(href='#') Connect
+    // - CARRUSEL DE IMAGENES
+    #slides.carousel.slide(data-ride='carousel')
+      ul.carousel-indicators
+        li.active(data-target='#slides', data-slide-to='0')
+        li(data-target='#slides', data-slide-to='1')
+        li(data-target='#slides', data-slide-to='2')
+      .carousel-inner
+        .carousel-item.active.h-100
+          img(src='images/cod1.jpeg')
+          .carousel-caption
+            h1.display-2 TKCD.GAMES
+            h3  The Real Social Network For Gamers
+            button#botonCarr.btn.btn-outline-light.btn-lg(type='button')  View
+            button#botonCarr.btn.btn-primary.btn-lg(type='button')  Get Started!
+        .carousel-item
+          img(src='images/spidey.jpg', alt='')
+          .carousel-caption
+            h1.display-2 TKCD.GAMES
+            h3  The Real Social Network For Gamers
+        .carousel-item
+          img(src='images/cod.jpg', alt='')
+          .carousel-caption
+            h1.display-2 TKCD.GAMES
+            h3  The Real Social Network For Gamers
+    // - PARRAFO GRIS
+    #jumbo.container-fluid
+      .col-12.mx-auto
+        p.lead.text-center
+          | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quia rem voluptatibus impedit expedita voluptatem sed corporis, iste praesentium est beatae. Laborum, esse. Aut dolorem beatae praesentium est! Corrupti, sapiente. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis sint vel accusantium
+          | dolore veniam, ipsam molestiae modi.
+      //
+        div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2" id="jumboButton">
+        <a href="#"> <button type="button" class="btn btn-outline-secondary btn-lg fixed" id="jumboButton2">Conoce
+        Mas</button> </a>
+        <div>
+    // - SECCION DE ANUNCIO DE LA PAGINA
+    .container-fluid.padding
+      .row.welcome.text-center
+        .col-12
+          h1.display-4 Gaming Community
+        hr
+        .col-12
+          p.lead
+            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis sint vel accusantium
+            | dolore veniam, ipsam molestiae modi.
+    // - FUNCIONES DE LA RED
+    .container-fluid.padding
+      .row.text-center.padding
+        .col-xs-12.col-sm-6.col-md-4
+          i.fas.fa-gamepad
+          h3 Juega Con Tus Amigos
+          p Diviertete compartiendo la mejor experiencia online con tu squad
+        .col-xs-12.col-sm-6.col-md-4
+          i.fab.fa-twitch
+          span.firstYoutube
+            i.fab.fa-youtube
+          h3 Crea Y Comparte
+          p Comparte tus momentos épicos a traves de Twitch o Youtube
+        .col-sm-12.col-md-4
+          i.fas.fa-list
+          h3 Tus Juegos En Un Mismo Lugar
+          p Manten todos tus juegos en la nube, listos para cuando tu lo estes
+      hr.my-4
+    // - BENEFICIOS DE LA RED
+    .container-fluid.padding
+      .row.padding
+        .col-md-12.col-lg-6
+          h2 La Mejor Red Social Para Ti
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nisi consequatur, culpa similique
+            | repudiandae.
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iure optio consequuntur temporibus,
+            | harum, obcaecati.
+          p
+            | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius laborum pariatur eveniet
+            | exercitationem a in labore molestiae amet unde debitis.
+          a.btn.btn-primary(href='#')  Conoce mas!
+        .col-lg-6
+          img.img-fluid(src='images/middle.jpg')
+    hr.my-4
+    // - PARALLAX EFFECT
+    figure
+      .fixed-wrap
+        #fixed
+        .col-lg-3.ml-auto
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, quisquam?
+    // - CONOCE AL EQUIPO
+    .container-fluid.padding
+      .row.welcome.text-center
+        .col-12
+          h1.display-4 Conoce al Equipo
+        hr
+    // - MIEMBROS DEL EQUIPO
+    .container-fluid.padding
+      .row.padding
+        .col-md-5.mx-auto
+          // - mx-auto centra las cosas dentro de las columnas
+          .card
+            img.card-img-top(src='images/team1.png')
+            .card-body
+              h4.card-title  Daniel Orozco
+              p.card-text
+                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+                | architecto provident sequi pariatur eveniet, hic iusto, nulla maxime tenetur natus alias
+                | quas. Consequuntur repellat at ratione cum nemo sequi velit.
+              a.btn.btn-outline-secondary(href='#') Conoce Mas!
+        .col-md-5.mx-auto
+          .card
+            img.card-img-top(src='images/team2.png')
+            .card-body
+              h4.card-title  Tania Orellana
+              p.card-text
+                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+                | architecto provident sequi pariatur eveniet, hic iusto, nulla maxime tenetur natus alias
+                | quas. Consequuntur repellat at ratione cum nemo sequi velit.
+              a.btn.btn-outline-secondary(href='#') Conoce Mas!
+        .col-md-5.mx-auto
+          .card
+            img.card-img-top(src='images/team3.png')
+            .card-body
+              h4.card-title  Carlos Trigueros
+              p.card-text
+                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+                | architecto provident sequi pariatur eveniet, hic iusto, nulla maxime tenetur natus alias
+                | quas. Consequuntur repellat at ratione cum nemo sequi velit.
+              a.btn.btn-outline-secondary(href='#') Conoce Mas!
+        .col-md-5.mx-auto
+          .card
+            img.card-img-top(src='images/team2.png')
+            .card-body
+              h4.card-title Karicha Lobato
+              p.card-text
+                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+                | architecto provident sequi pariatur eveniet, hic iusto, nulla maxime tenetur natus alias
+                | quas. Consequuntur repellat at ratione cum nemo sequi velit.
+              a.btn.btn-outline-secondary(href='#') Conoce Mas!
+    // - COMUNIDAD
+    .container-fluid.padding
+      .row.padding
+        .col-lg-6
+          h2
+            | Nuestra Comunidad
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ut nesciunt aliquam magni
+            | impedit vitae error quas excepturi.
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit porro harum similique sequi
+            | doloribus quaerat vel ad velit facilis modi quia nesciunt recusandae.
+          br
+        .col-lg-6
+          img.img-fluid(src='images/comunidad.jpg')
+      hr.my-4
+    // - SIGUENOS
+    .container-fluid.padding
+      .row.text-center.padding
+        .col-12
+          h2 Siguenos
+        .col-12.social.padding
+          a(href='https://facebook.com')
+            i.fab.fa-facebook
+          a(href='https://twitter.com')
+            i.fab.fa-twitter
+          a(href='https://plus.google.com/?hl=es')
+            i.fab.fa-google-plus-g
+          a(href='https://instagram.com')
+            i.fab.fa-instagram
+          a(href='https://youtube.com')
+            span.secondYoutube
+              i.fab.fa-youtube
+    // - Footer
+    footer
+      .container-fluid.padding
+        .row.text-center
+          .col-md-4
+            i.fab.fa-ethereum
+            span.eslogan TKCD.GAMES
+            // - AQUI
+            hr.light
+            p 12345-6789-1011
+            p bestogroup@gmail.com
+            p Boulevard de los Proceres
+            p Antiguo Cuscatlan, La Libertad, El Salvador
+          .col-md-4
+            hr.light
+            h5 About Us
+            hr.light
+            p p
+            p p
+            p p
+          .col-md-4
+            hr.light
+            h5 Privacy Terms
+            hr.light
+            p t
+            p t
+            p t
+          .col-12
+            hr.light-100
+            h5 ©2018 TKCD.GAMES, All rights reserved.
+            // - &copy; te coloca el simbolo de copyright
