@@ -37,13 +37,13 @@ app.post('/messages', async (req, res) => {
     var message = new Message(req.body);
 
     var savedMessage = await message.save()
-      console.log('---- SAVED ----');
+      console.log('---- GUARDADO EL MENSAJE ----');
 
     var censored = await Message.findOne({message:'badword'});
       if(censored)
         await Message.remove({_id: censored.id})
       else
-        io.emit('---- MENSAJE:', req.body);
+        io.emit('---- MENSAJE CENSURADO:', req.body);
       res.sendStatus(200);
   }
   catch (error){
