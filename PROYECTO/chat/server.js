@@ -14,7 +14,8 @@ var Message = mongoose.model('Message',{
   message : String
 })
 //LINK DE LA BASE DE DATOS DEL CHAT, FALTA CONFIGURAR ESTA MIERDA PARA VARIOS USUARIOS
-var dbUrl = 'mongodb://amkurian:amkurian1@ds257981.mlab.com:57981/simple-chat'
+//var dbUrl = 'mongodb://amkurian:amkurian1@ds257981.mlab.com:57981/simple-chat'
+var dbUrl='mongodb://root:daniel123@ds121099.mlab.com:21099/tkcdchat'
 
 app.get('/messages', (req, res) => {
   Message.find({},(err, messages)=> {
